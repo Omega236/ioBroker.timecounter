@@ -99,7 +99,7 @@ class Timecounter extends utils.Adapter {
         this.dicIdLastValue[iobrokerObject._id] = await this.getForeignStateAsync(iobrokerObject._id)
         // @ts-ignore
         this.dicIdUnit[iobrokerObject._id] = iobrokerObject.common.custom[this.namespace].unit
-        await this.createObjectsForId(iobrokerObject,iobrokerObject.common.custom[this.namespace].unit)
+        await this.createObjectsForId(iobrokerObject, iobrokerObject.common.custom[this.namespace].unit)
         this.log.debug('subscribeForeignStates ' + iobrokerObject._id)
         await this.subscribeForeignStatesAsync(iobrokerObject._id)
         await this.calcNewTimeinCounter(iobrokerObject._id)
@@ -131,18 +131,17 @@ class Timecounter extends utils.Adapter {
 
       if (lastValue && lastValue.val && lastValue.val >= ifGreaterOrEquan) {
         // berechnen wieviel Minuten dazukommen (alles auf 2 nachkomma runden)
-      
+
         // @ts-ignore
-        var unit = this.dicIdUnit[id]
-        var Multi = 1;
-        var round = 10000;
-        if (unit == 'min'){
+        let unit = this.dicIdUnit[id]
+        let Multi = 1
+        let round = 10000
+        if (unit === 'min') {
           Multi = 60
-          var round = 100;
-        }
-        else if (unit == 'sec'){
+          round = 100
+        } else if (unit === 'sec') {
           Multi = 3600
-          var round = 10;
+          round = 10
         }
         toAddTime = Math.round(Multi * (((new Date().getTime()) - objTotalTime.ts) / 3600000) * round) / round
         newTotalTime = Math.round((objTotalTime.val + toAddTime) * round) / round

@@ -35,7 +35,7 @@
 		"readme": "https://github.com/Omega236/ioBroker.timecounter/blob/master/README.md",
 		"loglevel": "info",
 		"mode": "daemon",
-		"type": "metering",
+		"type": "date-and-time",
 		"compact": true,
 		"supportCustoms": true,
 		"materialize": true,
