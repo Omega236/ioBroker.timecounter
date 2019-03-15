@@ -1,0 +1,36 @@
+<script type="text/x-iobroker" data-template-name="timecounter">
+	<div class="row">
+		<div class="col s2">
+			<input type="checkbox" data-field="enabled" data-default="false"/>
+			<!-- this field is mandatory, just to find out if to include this settings or not</span-->
+			<span class="translate">enabled</span>
+		</div>
+    <div  class="col S4">
+      <input type="text" data-field="idTotalTime" size="30">
+      <span class="translate">new Datapointname for counted time</span>
+    </div>
+  </div>
+  
+</script>
+
+<script type="text/javascript">
+	$.get("adapter/timecounter/words.js", function(script) {
+		let translation = script.substring(script.indexOf('{'), script.length);
+		translation = translation.substring(0, translation.lastIndexOf(';'));
+		$.extend(systemDictionary, JSON.parse(translation));
+	});
+
+	// There are two ways how to predefine default settings:
+	// - with attribute "data-default" (content independent)
+	// - with function in global variable "defaults". Function name is equal with adapter name.
+	//   as input function receives object with all information concerning it
+	if (typeof defaults !== 'undefined') {
+		defaults["timecounter"] = function (obj, instanceObj) {
+			return {
+				enabled:        false,
+        idEnergyPower:  'idTotalTime',
+        countIfGreaterOrEqual: 1
+			};
+		}
+	}
+</script>

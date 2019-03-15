@@ -1,0 +1,60 @@
+{
+	"common": {
+		"name": "timecounter",
+		"version": "0.1.0",
+		"news": {
+      "0.1.0": {
+				"en": "Erste Version",
+				"de": "First Version"
+      }
+		},
+		"title": "Time Counter",
+		"titleLang": {
+			"en": "Time Counter",
+			"de": "Time Counter"
+		},
+		"desc": {
+			"en": "Count the time a state is true",
+			"de": "Zählt wie lang ein State true ist"
+		},
+		"authors": [
+			"Lutz Sebastian <general.of.omega@googlemail.com>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "timecounter.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Omega236/ioBroker.timecounter/master/admin/timecounter.png",
+		"readme": "https://github.com/Omega236/ioBroker.timecounter/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "metering",
+		"compact": true,
+		"supportCustoms": true,
+		"materialize": true,
+		"preserveSettings": "custom",
+		"dependencies": [
+			{
+				"admin": ">=3.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	
+	"objects": [
+      
+           
+
+	],
+	"instanceObjects": [ ]
+}
