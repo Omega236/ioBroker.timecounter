@@ -13,5 +13,21 @@ systemDictionary = {
   "new Datapointname for counted time": {
 		"en": "new Datapointname for counted time",
 		"de": "neuer Datenpunktname für gezählte Zeit"
-	}
+  },
+  "only count time if datapoint value greater or equal this value": {
+    "en": "only count time if datapoint value greater or equal this value",
+    "de": "zähle Zeit wenn Datenpunkt wert Größer oder Gleich diesem Wert"
+  },
+  "seconds": {
+    "en": "seconds",
+    "de": "Sekunden"
+  },
+  "minutes": {
+    "en": "minutes",
+    "de": "Minuten"
+  },
+  "hours": {
+    "en": "hours",
+    "de": "Stunden"
+  }
 };
