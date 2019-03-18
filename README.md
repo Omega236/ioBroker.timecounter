@@ -2,7 +2,7 @@
 	<img src="admin/timecounter.png" width="64"/>
 	ioBroker.timecounter
 </h1>
-![Number of Installations](http://iobroker.live/badges/timecounter-installed.svg) ![Number of Installations](http://iobroker.live/badges/virtualpowermeter-stable.svg) 
+[![Number of Installations](http://iobroker.live/badges/timecounter-installed.svg) ![Number of Installations](http://iobroker.live/badges/virtualpowermeter-stable.svg) 
 [![NPM version](http://img.shields.io/npm/v/iobroker.timecounter.svg)](https://www.npmjs.com/package/iobroker.timecounter)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.timecounter.svg)](https://www.npmjs.com/package/iobroker.timecounter)
 [![Dependency Status](https://img.shields.io/david/Omega236/iobroker.timecounter.svg)](https://david-dm.org/Omega236/iobroker.timecounter)
